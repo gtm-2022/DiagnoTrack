@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DiagnoTrack</string>
+    <string name="external_storage_title">External Storage</string>
+    <string name="internal_storage_title">Internal Storage</string>
+    <string name="device_info_title">Display Information</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="welcome_home">Welcome to Diagnotrack</string>
+
+
+</resources>

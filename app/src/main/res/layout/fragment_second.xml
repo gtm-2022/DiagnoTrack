@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondFragment">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context="com.example.test.scrollviews.SecondFragment">
+
+
+        <TextView
+            android:id="@+id/seconFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_home"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"/>
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <!-- TODO: Update blank fragment layout -->
+
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context=".SecondFragment">
+
+
+                    <!--            1st row for image airplane, battery, bluetooth-->
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp" />
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/mobile_info" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/battery" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/memory" />
+
+
+                    </LinearLayout>
+
+                    <!--            1st row  for text airplane, battery, bluetooth   -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/infoText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Device Info"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/batteryText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Battery"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/cpuText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Sensor"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+
+                    <!--     2nd row for  image storage, signal, display    -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/storage" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/signal" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+
+                            app:srcCompat="@drawable/display" />
+
+
+                    </LinearLayout>
+
+                    <!--            2nd  row for  text storage, signal, display         -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/storageText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=" Storage"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/signalText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Signal"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/displayText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Display"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+
+                    <!--            3rd row image storage, signal, display           -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/volume" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/camera" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/rotation" />
+
+
+                    </LinearLayout>
+
+                    <!--            3rd row for  text storage, signal, display     -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/volumeText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Sound"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/cameraText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Camera"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/rotationText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="rotation"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+                    <!--            4tth  row  for image storage, signal, display           -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/gps" />
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/ic_light" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/notification" />
+
+
+                    </LinearLayout>
+
+                    <!--            4th row  for text storage, signal, display          -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/gpsText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="GPS"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/lightText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="light"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/notificationText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="notification"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+
+                    <!--            5th row  for image storage, signal, display        -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/power" />
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/vibration" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/wifi" />
+
+
+                    </LinearLayout>
+
+                    <!--            5th row  for text storage, signal, display  -->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/powerText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Power button"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/vibrationText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="vibration"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/wifiText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Wi-fi"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+
+                    <!--            6th row for  image storage, signal, display-->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/compass" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/call" />
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/bluetooth" />
+
+
+                    </LinearLayout>
+
+                    <!--            6th row  for text storage, signal, display-->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/compassText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Compass"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/callText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="phone Call"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/bluetoothText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Bluetooth"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+                    <!--            7th row for  image storage, signal, display-->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/fingerprint" />
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/usb" />
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="126dp"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/airplane" />
+
+
+                    </LinearLayout>
+
+                    <!--            7th row for  text storage, signal, display-->
+
+                    <LinearLayout
+                        android:layout_width="410dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/fingerprintText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Fingerprint"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/USBText"
+                            android:layout_width="126dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="USB"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                        <TextView
+                            android:id="@+id/AirplaneText"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Airplane"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
