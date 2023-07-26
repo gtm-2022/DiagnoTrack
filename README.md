@@ -3,7 +3,7 @@
 DiagnoTrack is a mobile diagnostic app designed for Android smartphones and tablets. It allows users to assess their device's software and hardware information, run sensor tests, check battery conditions, and monitor data storage and memory usage. This tool generates comprehensive reports to provide users with insights into their device's performance.
 
 <p align="center">
-<img src="https://github.com/gtm20/DiagnoTrack/assets/115064011/a254e8d6-f7c3-4e36-8c7f-a73ad4e57739">
+<img src="https://github.com/gtm20/DiagnoTrack/assets/115064011/1f81cc95-372e-46ea-93de-1f1ef5c1a6af">
 
 <br>
 <em>Diagnotrack Mobile View.</em>
