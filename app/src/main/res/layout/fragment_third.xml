@@ -6,12 +6,30 @@
     tools:context=".ThirdFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/thirdFragment"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:text="Developer Profile" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer Profile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/thirdFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Hello, I'm Gautam Kumar, a passionate Android developer and a student of B.Tech in Computer Science and Engineering. I have a strong foundation in C and Java programming languages, which allows me to create robust and efficient applications.\n\nWith a keen interest in Android development, I strive to create innovative and user-friendly mobile applications. I enjoy exploring the latest trends and technologies in the Android ecosystem, constantly expanding my knowledge and skills to deliver high-quality apps."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 </FrameLayout>

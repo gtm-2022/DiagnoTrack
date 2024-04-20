@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,54 +10,79 @@
         android:id="@+id/tv_device_name"
         android:text="Device Name: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:id="@+id/tv_device_model"
         android:text="Device Model: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_name"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_android_version"
         android:text="Android Version: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_model"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_screen_size"
         android:text="Screen Size: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_android_version"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_screen_resolution"
         android:text="Screen Resolution: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_screen_size"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_battery_level"
         android:text="Battery Level: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_screen_resolution"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_cpu_info"
         android:text="CPU Info: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_battery_level"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_ram_info"
         android:text="RAM Info: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cpu_info"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/tv_storage_info"
         android:text="Storage Info: "
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ram_info"
+        android:layout_marginTop="8dp"/>
 
-</LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

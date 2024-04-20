@@ -9,16 +9,23 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
+import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.File;
 import java.text.DecimalFormat;
 
 public class InfoActivity extends AppCompatActivity {
+
+
 
     private TextView tvDeviceName, tvDeviceModel, tvAndroidVersion, tvScreenSize, tvScreenResolution, tvBatteryLevel, tvCpuInfo, tvRamInfo, tvStorageInfo;
 
@@ -84,6 +91,17 @@ public class InfoActivity extends AppCompatActivity {
             StatFs stat = new StatFs(path.getPath());
             long blockSize = stat.getBlockSizeLong();
             long totalBlocks = stat.getBlockCountLong();
+            long totalSize = blockSize * totalBlocks;
+
+            // Convert size to GB
+            double totalSizeGB = (double) totalSize / 1000000000.0;
+
+            // Display size in GB
+            tvStorageInfo.setText("External storage size: " + totalSizeGB + " GB");
+        } else {
+            tvStorageInfo.setText("External storage not available.");
+        }
+
+
         }
     }
-}

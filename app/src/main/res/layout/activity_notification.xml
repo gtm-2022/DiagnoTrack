@@ -7,7 +7,7 @@
     tools:context=".NotificationActivity">
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/button_notify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -16,6 +16,18 @@
         android:layout_marginBottom="100dp"
         android:text="Alert message"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="327dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="66dp"
+        android:text="Welcome to Notification Manager"
+        app:layout_constraintBottom_toTopOf="@+id/button_notify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

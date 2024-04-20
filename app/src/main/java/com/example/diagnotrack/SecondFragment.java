@@ -19,9 +19,34 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_second, container, false);
+         ImageView deviceInfo,battery,sensor,storage,signal,display,sound, camera,rotation,gps,light,notification,power,
+                 vibration,wifi,compass,phone,bluetooth,fingerprint,usb,airplane;
 
-        ImageView imgView2 = view.findViewById(R.id.imageView2);
-        imgView2.setOnClickListener(new View.OnClickListener() {
+
+        deviceInfo=view.findViewById(R.id.deviceInfo);
+        battery=view.findViewById(R.id.battery);
+        sensor=view.findViewById(R.id.sensor);
+        storage=view.findViewById(R.id.storage);
+        signal=view.findViewById(R.id.signal);
+        display=view.findViewById(R.id.display);
+        sound=view.findViewById(R.id.sound);
+        camera=view.findViewById(R.id.camera);
+        rotation=view.findViewById(R.id.rotation);
+        gps=view.findViewById(R.id.gps);
+        light=view.findViewById(R.id.light);
+        notification=view.findViewById(R.id.notification);
+        power=view.findViewById(R.id.power);
+        vibration=view.findViewById(R.id.vibration);
+        wifi=view.findViewById(R.id.wifi);
+        compass=view.findViewById(R.id.compass);
+        phone=view.findViewById(R.id.phone);
+        bluetooth=view.findViewById(R.id.bluetooth);
+        fingerprint=view.findViewById(R.id.fingerprint);
+        usb=view.findViewById(R.id.usb);
+        airplane=view.findViewById(R.id.airplane);
+
+
+        deviceInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), InfoActivity.class);
@@ -29,8 +54,8 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        ImageView imgView=view.findViewById(R.id.imageView);
-        imgView.setOnClickListener(new View.OnClickListener(){
+
+        battery.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),BatteryActivity.class);
@@ -38,8 +63,7 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        ImageView imgView3=view.findViewById(R.id.imageView3);
-        imgView3.setOnClickListener(new View.OnClickListener(){
+        sensor.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(), SensorActivity.class);
@@ -47,8 +71,8 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        ImageView imgView4=view.findViewById(R.id.imageView4);
-        imgView4.setOnClickListener(new View.OnClickListener(){
+
+        storage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),StorageActivity.class);
@@ -57,8 +81,8 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView5=view.findViewById(R.id.imageView5);
-        imgView5.setOnClickListener(new View.OnClickListener(){
+
+        signal.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),SignalActivity.class);
@@ -66,8 +90,8 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        ImageView imgView6=view.findViewById(R.id.imageView6);
-        imgView6.setOnClickListener(new View.OnClickListener(){
+
+        display.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(), DisplayActivity.class);
@@ -76,8 +100,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView7=view.findViewById(R.id.imageView7);
-        imgView7.setOnClickListener(new View.OnClickListener(){
+        sound.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),SoundActivity.class);
@@ -86,8 +109,8 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView8=view.findViewById(R.id.imageView8);
-        imgView8.setOnClickListener(new View.OnClickListener(){
+
+        camera.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),CameraActivity.class);
@@ -95,9 +118,7 @@ public class SecondFragment extends Fragment {
             }
         });
 
-
-        ImageView imgView9=view.findViewById(R.id.imageView9);
-        imgView9.setOnClickListener(new View.OnClickListener(){
+        rotation.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),RotationActivity.class);
@@ -106,8 +127,8 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView10=view.findViewById(R.id.imageView10);
-        imgView10.setOnClickListener(new View.OnClickListener(){
+
+        gps.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(), LocationActivity.class);
@@ -116,8 +137,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView11=view.findViewById(R.id.imageView11);
-        imgView11.setOnClickListener(new View.OnClickListener(){
+        light.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),FlashActivity.class);
@@ -125,8 +145,7 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        ImageView imgView12=view.findViewById(R.id.imageView12);
-        imgView12.setOnClickListener(new View.OnClickListener(){
+        notification.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),NotificationActivity.class);
@@ -135,8 +154,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView13=view.findViewById(R.id.imageView13);
-        imgView13.setOnClickListener(new View.OnClickListener(){
+        power.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),PowerButtonActivity.class);
@@ -145,8 +163,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView14=view.findViewById(R.id.imageView14);
-        imgView14.setOnClickListener(new View.OnClickListener(){
+        vibration.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),VibrationActivity.class);
@@ -156,8 +173,7 @@ public class SecondFragment extends Fragment {
 
 
 
-        ImageView imgView15=view.findViewById(R.id.imageView15);
-        imgView15.setOnClickListener(new View.OnClickListener(){
+        wifi.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),WifiActivity.class);
@@ -166,8 +182,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView16=view.findViewById(R.id.imageView16);
-        imgView16.setOnClickListener(new View.OnClickListener(){
+        compass.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),CompassActivity.class);
@@ -177,8 +192,7 @@ public class SecondFragment extends Fragment {
 
 
 
-        ImageView imgView17=view.findViewById(R.id.imageView17);
-        imgView17.setOnClickListener(new View.OnClickListener(){
+        phone.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),PhoneActivity.class);
@@ -186,8 +200,7 @@ public class SecondFragment extends Fragment {
             }
         });
 
-        ImageView imgView18=view.findViewById(R.id.imageView18);
-        imgView18.setOnClickListener(new View.OnClickListener(){
+        bluetooth.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),BluetoothActivity.class);
@@ -196,8 +209,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView19=view.findViewById(R.id.imageView19);
-        imgView19.setOnClickListener(new View.OnClickListener(){
+        fingerprint.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),FingerPrintActivity.class);
@@ -206,8 +218,7 @@ public class SecondFragment extends Fragment {
         });
 
 
-        ImageView imgView20=view.findViewById(R.id.imageView20);
-        imgView20.setOnClickListener(new View.OnClickListener(){
+        usb.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),USBActivity.class);
@@ -217,8 +228,7 @@ public class SecondFragment extends Fragment {
 
 
 
-        ImageView imgView21=view.findViewById(R.id.imageView21);
-        imgView20.setOnClickListener(new View.OnClickListener(){
+        airplane.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent =new Intent(getActivity(),AirplaneActivity.class);

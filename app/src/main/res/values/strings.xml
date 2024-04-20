@@ -4,7 +4,7 @@
     <string name="internal_storage_title">Internal Storage</string>
     <string name="device_info_title">Display Information</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="welcome_home">Welcome to Diagnotrack</string>
+    <string name="welcome_home">Easily diagnos with Diagnotrack</string>
 
 
 </resources>
